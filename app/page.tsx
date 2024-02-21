@@ -2,6 +2,7 @@ import { CarCard, CustomFilter, HomePage, SearchBar, ShowMore } from "@/componen
 import { fuels, yearsOfProduction } from "@/constants";
 import { HomeProps } from "@/types";
 import { fetchCars } from "@/util";
+import Link from "next/link";
 
 export default async function Home({ searchParams }: HomeProps) {
 
@@ -16,8 +17,10 @@ export default async function Home({ searchParams }: HomeProps) {
 
   return (
     <main className="overflow-hidden">
-      <HomePage />
-      <div className="mt-12 padding-x padding-y">
+      <Link href={`#home`}>
+        <HomePage />
+      </Link>
+      <div className="mt-12 padding-x padding-y" id="home">
         <div className="home__text-container">
           <h1 className="text-4xl font-extrabold">Cars Catalogue</h1>
           <p className="px-2">Explore the cars you like</p>

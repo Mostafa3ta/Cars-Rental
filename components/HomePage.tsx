@@ -4,8 +4,6 @@ import Image from "next/image";
 import { CustomBtn } from ".";
 
 export default function HomePage() {
-    const handleScroll = () => { }
-
     return <>
 
         <div className="homePage">
@@ -18,7 +16,6 @@ export default function HomePage() {
                 <CustomBtn
                     title='Explore Cars'
                     ContainerStyle='bg-primary-blue hover:bg-blue-500 text-white rounded-full mt-10'
-                    handleClick={handleScroll}
                 />
             </div>
             <div className="homePage__image-container">
