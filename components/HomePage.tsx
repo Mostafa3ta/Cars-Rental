@@ -23,7 +23,7 @@ export default function HomePage() {
             </div>
             <div className="homePage__image-container">
                 <div className="homePage__image">
-                    <Image src="/hero.png" alt="Car" fill className="object-contain" />
+                    <Image src="/hero.png" alt="Car" fill priority className="object-contain" />
                 </div>
                 <div className="homePage__image-overlay" />
             </div>
