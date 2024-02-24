@@ -27,21 +27,25 @@ export default function CarCard({ car }: CarCardProps) {
             </p>
 
             <div className="relative w-full h-40 my-3 object-contain">
-                <Image src={generateCarImageUrl(car)} alt='car img' fill priority className='object-contain' />
+                {/* <Image src={generateCarImageUrl(car)} alt='car img' fill priority className='object-contain' /> */}
+                <img src={generateCarImageUrl(car)} alt='car img' className='object-contain w-80' />
             </div>
 
             <div className="relative flex w-full mt-2">
                 <div className='flex group-hover:invisible justify-between w-full text-gray'>
                     <div className="flex flex-col justify-center items-center gab-2">
-                        <Image src={'steering-wheel.svg'} alt='drive icon' width={20} height={20} />
+                        {/* <Image src={'steering-wheel.svg'} alt='drive icon' width={20} height={20} /> */}
+                        <img src={'steering-wheel.svg'} alt='drive icon' width={20} height={20} />
                         <p className='text-[14px]'>{transmission === 'a' ? 'Automatic' : 'Manual'}</p>
                     </div>
                     <div className="flex flex-col justify-center items-center gab-2">
-                        <Image src={'tire.svg'} alt='drive icon' width={20} height={20} />
+                        {/* <Image src={'tire.svg'} alt='drive icon' width={20} height={20} /> */}
+                        <img src={'tire.svg'} alt='drive icon' width={20} height={20} />
                         <p className='text-[14px]'>{drive.toUpperCase()}</p>
                     </div>
                     <div className="flex flex-col justify-center items-center gab-2">
-                        <Image src={'gas.svg'} alt='drive icon' width={20} height={20} />
+                        {/* <Image src={'gas.svg'} alt='drive icon' width={20} height={20} /> */}
+                        <img src={'gas.svg'} alt='drive icon' width={20} height={20} />
                         <p className='text-[14px]'>{city_mpg} MPG</p>
                     </div>
 

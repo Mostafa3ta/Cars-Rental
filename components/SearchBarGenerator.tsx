@@ -71,12 +71,18 @@ export default function SearchBarGenerator({ manufacturer, setManuFacturer }: Se
                                                         className={`absolute inset-y-0 left-0 flex items-center pl-3 ${active ?
                                                             'text-white' : 'text-teal-600'}`}
                                                     >
-                                                        <Image
+                                                        <img
                                                             alt='check'
                                                             src='check.svg'
                                                             height={20}
                                                             width={20}
                                                         />
+                                                        {/* <Image
+                                                            alt='check'
+                                                            src='check.svg'
+                                                            height={20}
+                                                            width={20}
+                                                        /> */}
                                                     </span>
                                                 ) : null}
                                             </>

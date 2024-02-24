@@ -16,12 +16,8 @@ export default function CustomBtn({ title, ContainerStyle, handleClick, btnType,
             <span className={`flex-1 ${textStyles}`}>{title}</span>
             {rightIcon && (
                 <div className="relative w-6 h-6">
-                    <Image
-                        src={rightIcon}
-                        alt="arrow right"
-                        fill
-                        className="object-contain"
-                    />
+                    {/* <Image src={rightIcon} alt="arrow right" fill className="object-contain"/> */}
+                    <img src={rightIcon} alt="arrow right" className=" object-contain"/>
                 </div>
             )}
         </button>

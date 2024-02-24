@@ -6,7 +6,14 @@ export default function Navbar() {
   return <>
     <header className='w-full absolute z-10'>
         <nav className='navbar__styles'>
-            <Image
+            {/* <Image
+                src="/logo.svg"
+                alt='logo'
+                width={115}
+                height={15}
+                className='object-contain'
+            /> */}
+            <img
                 src="/logo.svg"
                 alt='logo'
                 width={115}

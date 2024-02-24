@@ -65,13 +65,20 @@ export default function SearchBar() {
             </div>
 
             <div className='searchbar__item'>
-                <Image
+                <img
                     alt='car model'
                     src={'/model-icon.png'}
                     width={25}
                     height={25}
                     className='absolute ml-4'
                 />
+                {/* <Image
+                    alt='car model'
+                    src={'/model-icon.png'}
+                    width={25}
+                    height={25}
+                    className='absolute ml-4'
+                /> */}
                 <input
                     type='text'
                     name='model'
