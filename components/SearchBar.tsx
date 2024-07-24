@@ -5,8 +5,8 @@ import { SearchBarGenerator } from '.'
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
-const SearchBtn = ({ otheClasses }: { otheClasses: string }) => (
-    <button className={`-ml-3 z-10 ${otheClasses}`}>
+const SearchBtn = ({ otherClasses }: { otherClasses: string }) => (
+    <button className={`-ml-3 z-10 ${otherClasses}`}>
         <Image
             src={"/magnifying-glass.svg"}
             alt={"magnifying glass"}
@@ -61,7 +61,7 @@ export default function SearchBar() {
                     manufacturer={manufacturer}
                     setManuFacturer={setManuFacturer}
                 />
-                <SearchBtn otheClasses='sm:hidden' />
+                <SearchBtn otherClasses='sm:hidden' />
             </div>
 
             <div className='searchbar__item'>
@@ -87,9 +87,9 @@ export default function SearchBar() {
                     placeholder='Tiguan...'
                     className='searchbar__input'
                 />
-                <SearchBtn otheClasses='sm:hidden' />
+                <SearchBtn otherClasses='sm:hidden' />
             </div>
-            <SearchBtn otheClasses='max-sm:hidden' />
+            <SearchBtn otherClasses='max-sm:hidden' />
 
         </form>
     </>

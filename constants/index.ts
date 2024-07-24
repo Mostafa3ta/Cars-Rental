@@ -69,28 +69,29 @@ export const footerLinks = [
   {
     title: 'About',
     links: [
-      { title: 'How it works', url: '/' },
-      { title: 'Featuerd', url: '/' },
-      { title: 'Partnership', url: '/' },
-      { title: 'Relations', url: '/' },
+      { title: 'How it works', url: '/', target: '_self' },
+      { title: 'Featuerd', url: '/', target: '_self' },
+      { title: 'Partnership', url: '/', target: '_self' },
+      { title: 'Relations', url: '/', target: '_self' },
     ],
   },
   {
     title: 'Company',
     links: [
-      { title: 'Events', url: '/' },
-      { title: 'Blog', url: '/' },
-      { title: 'Podcast', url: '/' },
-      { title: 'Invite a friend', url: '/' },
+      { title: 'Events', url: '/', target: '_self' },
+      { title: 'Blog', url: '/', target: '_self' },
+      { title: 'Podcast', url: '/', target: '_self' },
+      { title: 'Invite a friend', url: '/', target: '_self' },
     ],
   },
   {
     title: 'Socials',
     links: [
-      { title: 'GitHub', url: 'https://github.com/Mostafa3ta' },
-      { title: 'Instagram', url: 'https://www.instagram.com/mostafa3ta_106?igsh=bXVoMm9yazcwdmlo' },
-      { title: 'LinkedIn', url: 'https://www.linkedin.com/in/mostafa-mahmoud-33a1542b0' },
-      { title: 'Facebook', url: 'https://www.facebook.com/profile.php?id=100007766405910&ref=xav_ig_profile_web' },
+      { title: 'Facebook', target:'_blank', url: 'https://www.facebook.com/profile.php?id=100007766405910&ref=xav_ig_profile_web' ,},
+      { title: 'LinkedIn', target:'_blank', url: 'https://www.linkedin.com/in/mostafa-mahmoud-33a1542b0' ,},
+      { title: 'GitHub', target:'_blank', url: 'https://github.com/Mostafa3ta' ,},
+      // { title: 'Instagram', target:'_blank', url: 'https://www.instagram.com/mostafa3ta_106?igsh=bXVoMm9yazcwdmlo' ,},
+      { title: 'Profile', target:'_blank', url: 'https://portfolio-ten-tau-56.vercel.app/' ,},
     ],
   },
 ]

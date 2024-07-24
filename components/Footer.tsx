@@ -22,7 +22,7 @@ export default function Footer() {
               <h3 className='font-bold'>{item.title}</h3>
               <div className='flex flex-col gap-5'>
                 {item.links.map((link) => (
-                  <Link key={link.title} href={link.url} target='_blank' className='text-gray-500 hover:text-gray-950'>
+                  <Link key={link.title} href={link.url} target={link.target} className='text-gray-500 hover:text-gray-950'>
                     {link.title}
                   </Link>
                 ))}

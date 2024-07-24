@@ -43,9 +43,9 @@ export default function SearchBarGenerator({ manufacturer, setManuFacturer }: Se
                         leaveTo='opacity-0'
                         afterLeave={() => setQuery('')}
                     >
-                        <Combobox.Options>
+                        <Combobox.Options className='absolute bg-white z-20 w-full max-h-80 shadow-xl overflow-auto'>
                             {filterManufacturers.length === 0 && query !== '' ? (
-                                <div className="relative cursor-default select-none px-4 py-2 text-gray-700">
+                                <div className="absolute cursor-default z-20 select-none px-4 py-2 bg-white text-gray-700">
                                     Nothing found.
                                 </div>
                             ) : (
